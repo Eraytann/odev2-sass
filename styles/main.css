@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Open+Sans:wght@300;400;500;800&display=swap");
+body {
+  margin: 0 auto;
+}
+
+.menu, .hide-menu {
+  display: grid;
+  grid-template-columns: repeat(12, auto);
+  grid-template-rows: 60px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+}
+.menu #item-logo, .hide-menu #item-logo {
+  color: #fff;
+  grid-column: 4;
+  justify-self: center;
+  align-self: center;
+  font-size: 20px;
+}
+.menu #item, .hide-menu #item {
+  align-self: center;
+  justify-self: center;
+  text-transform: uppercase;
+}
+.menu #item a, .hide-menu #item a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+}
+.menu #item a:hover, .hide-menu #item a:hover {
+  color: #C1C1C1;
+}
+
+.hide-menu {
+  background-color: #fff;
+}
+.hide-menu #item a {
+  color: #212529;
+}
+.hide-menu #item a:hover {
+  color: #0085a1;
+}
+
+.bg-head {
+  background-image: url("https://startbootstrap.github.io/startbootstrap-clean-blog-jekyll/img/bg-index.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: black;
+  background-attachment: scroll;
+}
+.bg-head .overlay {
+  background-color: rgba(33, 37, 41, 0.5);
+  position: relative;
+}
+.bg-head .overlay .row {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-top: 85px;
+  padding-bottom: 85px;
+}
+.bg-head .overlay .row #row-item {
+  text-align: center;
+  grid-column: 1/-1;
+  justify-self: center;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+.bg-head .overlay .row #row-item h1 {
+  font-size: 80px;
+}
+.bg-head .overlay .row #row-item p {
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.container .inline-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .inline-container .post {
+  max-width: 40%;
+  font-family: "Lora", serif;
+  color: #6C757D;
+}
+@media (max-width: 992px) {
+  .container .inline-container .post {
+    max-width: 75%;
+  }
+}
+.container .inline-container .post a {
+  text-decoration: none;
+  color: #212529;
+}
+.container .inline-container .post a:hover {
+  color: #0085A1;
+}
+.container .inline-container .post a h3 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 36px;
+}
+.container .inline-container .post a p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+}
+.container .clearfix {
+  display: flex;
+  justify-content: center;
+}
+.container .clearfix .btn {
+  border: #0085A1;
+  background-color: #0085A1;
+  padding: 15px 25px;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.container .clearfix .btn:hover {
+  background-color: #00657b;
+}
+.container .clearfix .btn:focus {
+  border: 1px solid #005b6e;
+}
+
+hr {
+  border: 1;
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-bottom: 65px;
+}
+.footer .social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+.footer .social-icons .fa {
+  font-size: 30px;
+  padding: 20px;
+  text-align: center;
+  width: 30px;
+  border-radius: 50%;
+  text-decoration: none;
+  background-color: #495057;
+  color: white;
+}
+.footer .social-icons .fa:hover {
+  background-color: #0085A1;
+}/*# sourceMappingURL=main.css.map */
